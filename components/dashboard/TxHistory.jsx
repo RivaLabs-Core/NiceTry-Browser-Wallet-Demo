@@ -56,7 +56,7 @@
 
 // export default function TxHistory({ transactions }) {
 //   return (
-//     <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+//     <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
 //       <div className="flex items-center gap-2 mb-3">
 //         <div className="w-2 h-2 rounded-full bg-cyan-500" />
 //         <h2 className="text-xs font-semibold tracking-widest text-gray-500 uppercase">Transactions</h2>
@@ -136,7 +136,7 @@ function TxRow({ tx }) {
 
 export default function TxHistory({ transactions }) {
   return (
-    <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+    <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
       <div className="flex items-center gap-2 mb-3">
         <div className="w-2 h-2 rounded-full bg-cyan-500" />
         <h2 className="text-xs font-semibold tracking-widest text-gray-500 uppercase">Transactions</h2>

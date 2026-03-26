@@ -26,14 +26,14 @@ export default function RecoverSeed({ onSubmit, onBack }) {
         <div className="space-y-3">
           <textarea rows={4} placeholder="word1 word2 word3 … word12" value={phrase}
             onChange={e => { setPhrase(e.target.value); setError('') }}
-            className="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-sm font-mono focus:border-brand focus:outline-none transition-colors placeholder:text-gray-600 resize-none" />
+            className="w-full bg-[#26272A] border border-gray-700 rounded-xl px-4 py-3 text-sm font-mono focus:border-brand focus:outline-none transition-colors placeholder:text-gray-600 resize-none" />
           {error && <p className="text-red-400 text-xs">{error}</p>}
           <button onClick={handleSubmit}
             className="w-full py-3.5 rounded-xl bg-brand hover:bg-emerald-400 text-gray-950 font-semibold text-sm transition-colors">
             Continue
           </button>
         </div>
-        <div className="mt-6 bg-gray-900 border border-gray-800 rounded-xl p-4">
+        <div className="mt-6 bg-[#26272A] border border-gray-800 rounded-xl p-4">
           <p className="text-[11px] text-gray-500 leading-relaxed">
             <span className="text-brand font-semibold">Security: </span>
             Your seed phrase never leaves your browser. It's validated locally

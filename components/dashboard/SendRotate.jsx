@@ -5,7 +5,7 @@
 //   return (
 //     <div className="space-y-3">
 //       {/* Send form */}
-//       <div className="p-5 bg-gray-900 border border-gray-800 rounded-2xl">
+//       <div className="p-5 bg-[#26272A] border border-gray-800 rounded-2xl">
 //         <h2 className="mb-4 text-sm font-semibold">Send tokens</h2>
 
 //         <div className="mb-5 space-y-3">
@@ -38,7 +38,7 @@
 //       </div>
 
 //       {/* Key rotation info */}
-//       <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+//       <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
 //         <p className="text-[10px] text-gray-500 font-medium uppercase tracking-wider mb-3">Key rotation preview</p>
 //         <div className="flex items-center gap-2">
 //           <div className="flex-1 bg-blue-500/10 border border-blue-500/30 rounded-lg px-3 py-2.5">
@@ -48,9 +48,9 @@
 //             </p>
 //           </div>
 //           <span className="text-lg text-gray-700 shrink-0">→</span>
-//           <div className="flex-1 bg-purple-500/10 border border-purple-500/25 rounded-lg px-3 py-2.5">
-//             <p className="text-[9px] text-purple-400/60 font-semibold mb-0.5">ROTATES TO</p>
-//             <p className="font-mono text-[11px] text-purple-400 truncate">
+//           <div className="flex-1 bg-[#134134] border border-[#00D1A0] rounded-lg px-3 py-2.5">
+//             <p className="text-[9px] text-[#00D1A0] font-semibold mb-0.5">ROTATES TO</p>
+//             <p className="font-mono text-[11px] text-[#00D1A0] truncate">
 //               key[{currentIndex + 1}] {nextKey ? shortAddr(nextKey.address) : '—'}
 //             </p>
 //           </div>
@@ -71,7 +71,7 @@ export default function SendRotate({ activeKey, nextKey, currentIndex, busy, onS
   return (
     <div className="space-y-3">
       {/* Send form */}
-      <div className="p-5 bg-gray-900 border border-gray-800 rounded-2xl">
+      <div className="p-5 bg-[#26272A] border border-gray-800 rounded-2xl">
         <h2 className="mb-4 text-sm font-semibold">Send tokens</h2>
 
         <div className="mb-5 space-y-3">
@@ -94,8 +94,8 @@ export default function SendRotate({ activeKey, nextKey, currentIndex, busy, onS
 
         <button onClick={onSend} disabled={busy || !nextKey}
           className={`w-full py-3.5 rounded-xl text-sm font-semibold transition-all ${
-            busy ? 'bg-brand/20 text-brand animate-pulse'
-                 : 'bg-brand hover:bg-emerald-400 text-gray-950'
+            busy ? 'bg-[#212225] text-[#565656] animate-pulse'
+                 : 'bg-[#3F56E3]  text-white'
           }`}>
           {busy
             ? <span className="flex items-center justify-center gap-2"><Spinner className="w-4 h-4" color="border-brand" /> Sending + rotating…</span>
@@ -104,7 +104,7 @@ export default function SendRotate({ activeKey, nextKey, currentIndex, busy, onS
       </div>
 
       {/* Key rotation info */}
-      <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+      <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
         <p className="text-[10px] text-gray-500 font-medium uppercase tracking-wider mb-3">Key rotation preview</p>
         <div className="flex items-center gap-2">
           <div className="flex-1 bg-blue-500/10 border border-blue-500/30 rounded-lg px-3 py-2.5">
@@ -114,9 +114,9 @@ export default function SendRotate({ activeKey, nextKey, currentIndex, busy, onS
             </p>
           </div>
           <span className="text-lg text-gray-700 shrink-0">→</span>
-          <div className="flex-1 bg-purple-500/10 border border-purple-500/25 rounded-lg px-3 py-2.5">
-            <p className="text-[9px] text-purple-400/60 font-semibold mb-0.5">ROTATES TO</p>
-            <p className="font-mono text-[11px] text-purple-400 truncate">
+          <div className="flex-1 bg-[#134134] border border-[#00D1A0] rounded-lg px-3 py-2.5">
+            <p className="text-[9px] text-[#00D1A0] font-semibold mb-0.5">ROTATES TO</p>
+            <p className="font-mono text-[11px] text-[#00D1A0] truncate">
               key[{currentIndex + 1}] {nextKey ? shortAddr(nextKey.address) : '—'}
             </p>
           </div>

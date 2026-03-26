@@ -19,7 +19,7 @@ export default function ShowSeed({ phrase, onContinue }) {
           </div>
         </div>
 
-        <div className="bg-gray-900 border border-gray-800 rounded-xl p-4 mb-6">
+        <div className="bg-[#26272A] border border-gray-800 rounded-xl p-4 mb-6">
           <div className="grid grid-cols-3 gap-1.5">
             {words.map((w, i) => (
               <div key={i} className="bg-gray-800/60 rounded-lg px-2.5 py-2 flex items-center gap-2 font-mono text-[12px]">

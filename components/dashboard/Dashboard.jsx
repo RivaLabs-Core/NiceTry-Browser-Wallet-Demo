@@ -33,7 +33,7 @@
 
 //         {/* ── Header ── */}
 //         <div className="flex items-center gap-3 mb-2">
-//           <div className="flex items-center justify-center bg-gray-900 border border-gray-800 w-9 h-9 rounded-xl shrink-0">
+//           <div className="flex items-center justify-center bg-[#26272A] border border-gray-800 w-9 h-9 rounded-xl shrink-0">
 //             <Logo size={22} />
 //           </div>
 //           <div className="flex-1 min-w-0">
@@ -53,7 +53,7 @@
 
 //         {/* ── Smart account address (clickable to copy) ── */}
 //         <button onClick={copyAddress}
-//           className="flex items-center w-full gap-2 px-3 py-2 mb-5 transition-colors border rounded-lg bg-gray-900/50 border-gray-800/50 hover:border-gray-700 group">
+//           className="flex items-center w-full gap-2 px-3 py-2 mb-5 transition-colors border rounded-lg bg-[#26272A]/50 border-gray-800/50 hover:border-gray-700 group">
 //           <span className="font-mono text-[11px] text-gray-500 truncate flex-1 text-left">{smartAddr}</span>
 //           <span className={`text-[10px] font-medium shrink-0 transition-colors ${
 //             copied ? 'text-brand' : 'text-gray-600 group-hover:text-gray-400'
@@ -63,7 +63,7 @@
 //         </button>
 
 //         {/* ── Navigation tabs ── */}
-//         <div className="flex gap-1 p-1 mb-4 bg-gray-900 border border-gray-800 rounded-xl">
+//         <div className="flex gap-1 p-1 mb-4 bg-[#26272A] border border-gray-800 rounded-xl">
 //           {[
 //             { id: 'home', label: 'Wallet' },
 //             { id: 'send', label: 'Send' },
@@ -89,7 +89,7 @@
 //               onReceive={() => setShowReceive(true)}
 //             />
 
-//             <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+//             <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
 //               <div className="flex items-center gap-2 mb-3">
 //                 <div className="w-2 h-2 bg-blue-500 rounded-full" />
 //                 <h2 className="text-xs font-semibold tracking-widest text-gray-500 uppercase">Signer status</h2>
@@ -100,9 +100,9 @@
 //                   <p className="font-mono text-[11px] text-blue-400 truncate">key[{currentIndex}]</p>
 //                 </div>
 //                 <span className="text-gray-700 shrink-0">→</span>
-//                 <div className="flex-1 px-3 py-2 border rounded-lg bg-purple-500/10 border-purple-500/25">
-//                   <p className="text-[9px] text-purple-400/60 font-semibold mb-0.5">NEXT</p>
-//                   <p className="font-mono text-[11px] text-purple-400 truncate">key[{currentIndex + 1}]</p>
+//                 <div className="flex-1 px-3 py-2 border rounded-lg bg-[#134134] border-[#00D1A0]">
+//                   <p className="text-[9px] text-[#00D1A0] font-semibold mb-0.5">NEXT</p>
+//                   <p className="font-mono text-[11px] text-[#00D1A0] truncate">key[{currentIndex + 1}]</p>
 //                 </div>
 //               </div>
 //               <div className="flex gap-4 mt-3 text-[11px]">
@@ -112,7 +112,7 @@
 //             </div>
 
 //             {txHistory.length > 0 && (
-//               <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+//               <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
 //                 <div className="flex items-center justify-between mb-3">
 //                   <div className="flex items-center gap-2">
 //                     <div className="w-2 h-2 rounded-full bg-cyan-500" />
@@ -153,7 +153,7 @@
 //               onRecipientChange={onRecipientChange} onAmountChange={onAmountChange}
 //             />
 //             {logs.length > 0 && (
-//               <div className="overflow-hidden bg-gray-900 border border-gray-800 rounded-xl">
+//               <div className="overflow-hidden bg-[#26272A] border border-gray-800 rounded-xl">
 //                 <button onClick={() => setSendConsoleOpen(!sendConsoleOpen)}
 //                   className="flex items-center w-full gap-2 p-4 transition-colors hover:bg-gray-800/30">
 //                   <div className={`w-2 h-2 rounded-full ${busy ? 'bg-amber-500 animate-pulse' : logs.some(l => l.type === 'err') ? 'bg-red-500' : 'bg-emerald-500'}`} />
@@ -181,7 +181,7 @@
 //             <TxHistory transactions={txHistory} />
 //             <KeyTree tree={tree} currentIndex={currentIndex} />
 
-//             <div className="overflow-hidden bg-gray-900 border border-gray-800 rounded-xl">
+//             <div className="overflow-hidden bg-[#26272A] border border-gray-800 rounded-xl">
 //               <button onClick={() => setConsoleOpen(!consoleOpen)}
 //                 className="flex items-center w-full gap-2 p-4 transition-colors hover:bg-gray-800/30">
 //                 <div className="w-2 h-2 bg-gray-500 rounded-full" />
@@ -244,14 +244,14 @@ export default function Dashboard({
 
         {/* ── Header ── */}
         <div className="flex items-center gap-3 mb-2">
-          <div className="flex items-center justify-center bg-gray-900 border border-gray-800 w-9 h-9 rounded-xl shrink-0">
+          <div className="flex items-center justify-center w-9 h-9 rounded-xl shrink-0">
             <Logo size={22} />
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2">
               <h1 className="text-sm font-bold tracking-tight">Nice Try</h1>
-              <span className="text-[9px] text-emerald-500 font-semibold tracking-wider uppercase flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="text-[9px] text-whitefont-semibold tracking-wider uppercase flex items-center gap-1">
+                <span className="w-1.5 h-1.5  bg-[#231DF9] animate-pulse" />
                 Base Sepolia
               </span>
             </div>
@@ -264,7 +264,7 @@ export default function Dashboard({
 
         {/* ── Smart account address (clickable to copy) ── */}
         <button onClick={copyAddress}
-          className="flex items-center w-full gap-2 px-3 py-2 mb-5 transition-colors border rounded-lg bg-gray-900/50 border-gray-800/50 hover:border-gray-700 group">
+          className="flex items-center w-full gap-2 px-3 py-2 mb-5 transition-colors border rounded-lg bg-[#26272A]/50 border-gray-800/50 hover:border-gray-700 group">
           <span className="font-mono text-[11px] text-gray-500 truncate flex-1 text-left">{smartAddr}</span>
           <span className={`text-[10px] font-medium shrink-0 transition-colors ${
             copied ? 'text-brand' : 'text-gray-600 group-hover:text-gray-400'
@@ -274,7 +274,7 @@ export default function Dashboard({
         </button>
 
         {/* ── Navigation tabs ── */}
-        <div className="flex gap-1 p-1 mb-4 bg-gray-900 border border-gray-800 rounded-xl">
+        <div className="flex gap-1 p-1 mb-4 bg-[#26272A] border border-gray-800 rounded-xl">
           {[
             { id: 'home', label: 'Wallet' },
             { id: 'send', label: 'Send' },
@@ -282,7 +282,7 @@ export default function Dashboard({
           ].map(tab => (
             <button key={tab.id} onClick={() => setView(tab.id)}
               className={`flex-1 py-2 rounded-lg text-[12px] font-semibold transition-colors ${
-                view === tab.id ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-300'
+                view === tab.id ? 'bg-[#1E4942] text-[#00D1A0]]' : 'text-gray-500 hover:text-gray-300'
               }`}>
               {tab.label}
             </button>
@@ -299,7 +299,7 @@ export default function Dashboard({
               onReceive={() => setShowReceive(true)}
             />
 
-            <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+            <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-2 h-2 bg-blue-500 rounded-full" />
                 <h2 className="text-xs font-semibold tracking-widest text-gray-500 uppercase">Signer status</h2>
@@ -310,19 +310,19 @@ export default function Dashboard({
                   <p className="font-mono text-[11px] text-blue-400 truncate">key[{currentIndex}]</p>
                 </div>
                 <span className="text-gray-700 shrink-0">→</span>
-                <div className="flex-1 px-3 py-2 border rounded-lg bg-purple-500/10 border-purple-500/25">
-                  <p className="text-[9px] text-purple-400/60 font-semibold mb-0.5">NEXT</p>
-                  <p className="font-mono text-[11px] text-purple-400 truncate">key[{currentIndex + 1}]</p>
+                <div className="flex-1 px-3 py-2 border rounded-lg bg-[#134134] border-[#00D1A0]">
+                  <p className="text-[9px] text-[#00D1A0]  font-semibold mb-0.5">NEXT</p>
+                  <p className="font-mono text-[11px] text-[#00D1A0] truncate">key[{currentIndex + 1}]</p>
                 </div>
               </div>
               <div className="flex gap-4 mt-3 text-[11px]">
-                <span className="text-gray-500">Rotations: <span className="font-mono font-semibold text-brand">{currentIndex}</span></span>
-                <span className="text-gray-500">Keys left: <span className="font-mono font-semibold text-emerald-400">{tree.length - currentIndex - 1}</span></span>
+                <span className="text-gray-500">Rotations: <span className="font-mono font-semibold text-[#00D1A0]]">{currentIndex}</span></span>
+                <span className="text-gray-500">Keys left: <span className="font-mono font-semibold text-[#00D1A0]]">{tree.length - currentIndex - 1}</span></span>
               </div>
             </div>
 
             {txHistory.length > 0 && (
-              <div className="p-4 bg-gray-900 border border-gray-800 rounded-xl">
+              <div className="p-4 bg-[#26272A] border border-gray-800 rounded-xl">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-cyan-500" />
@@ -363,7 +363,7 @@ export default function Dashboard({
               onRecipientChange={onRecipientChange} onAmountChange={onAmountChange}
             />
             {logs.length > 0 && (
-              <div className="overflow-hidden bg-gray-900 border border-gray-800 rounded-xl">
+              <div className="overflow-hidden bg-[#26272A] border border-gray-800 rounded-xl">
                 <button onClick={() => setSendConsoleOpen(!sendConsoleOpen)}
                   className="flex items-center w-full gap-2 p-4 transition-colors hover:bg-gray-800/30">
                   <div className={`w-2 h-2 rounded-full ${busy ? 'bg-amber-500 animate-pulse' : logs.some(l => l.type === 'err') ? 'bg-red-500' : 'bg-emerald-500'}`} />
@@ -391,7 +391,7 @@ export default function Dashboard({
             <TxHistory transactions={txHistory} />
             <KeyTree tree={tree} currentIndex={currentIndex} />
 
-            <div className="overflow-hidden bg-gray-900 border border-gray-800 rounded-xl">
+            <div className="overflow-hidden bg-[#26272A] border border-gray-800 rounded-xl">
               <button onClick={() => setConsoleOpen(!consoleOpen)}
                 className="flex items-center w-full gap-2 p-4 transition-colors hover:bg-gray-800/30">
                 <div className="w-2 h-2 bg-gray-500 rounded-full" />

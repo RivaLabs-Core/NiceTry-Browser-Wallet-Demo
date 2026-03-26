@@ -4,7 +4,7 @@ export default function LandingPage({ onNavigate }) {
   return (
     <div className="min-h-screen flex items-center justify-center p-6">
       <div className="w-full max-w-sm text-center">
-        <div className="w-20 h-20 rounded-2xl bg-gray-900 border border-gray-800 flex items-center justify-center mx-auto mb-8">
+        <div className="w-20 h-20 rounded-2xl bg-[#26272A] border border-gray-800 flex items-center justify-center mx-auto mb-8">
           <Logo size={48} />
         </div>
         <h1 className="text-2xl font-bold tracking-tight mb-2">Nice Try</h1>

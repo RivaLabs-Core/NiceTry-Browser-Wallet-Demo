@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react'
 
 const colors = {
   info: 'text-blue-400', ok: 'text-emerald-400',
-  warn: 'text-amber-400', err: 'text-red-400', step: 'text-purple-400',
+  warn: 'text-amber-400', err: 'text-red-400', step: 'text-[#00D1A0]',
 }
 
 export default function Console({ logs, onClear }) {

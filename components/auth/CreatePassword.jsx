@@ -26,14 +26,14 @@ export default function CreatePassword({ onSubmit, onBack, loading }) {
             <label className="text-[11px] text-gray-500 font-medium block mb-1.5">Password</label>
             <input type="password" placeholder="Minimum 6 characters" value={password}
               onChange={e => { setPassword(e.target.value); setError('') }}
-              className="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-sm focus:border-brand focus:outline-none transition-colors placeholder:text-gray-600" />
+              className="w-full bg-[#26272A] border border-gray-700 rounded-xl px-4 py-3 text-sm focus:border-brand focus:outline-none transition-colors placeholder:text-gray-600" />
           </div>
           <div>
             <label className="text-[11px] text-gray-500 font-medium block mb-1.5">Confirm</label>
             <input type="password" placeholder="Repeat password" value={confirm}
               onChange={e => { setConfirm(e.target.value); setError('') }}
               onKeyDown={e => e.key === 'Enter' && handleSubmit()}
-              className="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-sm focus:border-brand focus:outline-none transition-colors placeholder:text-gray-600" />
+              className="w-full bg-[#26272A] border border-gray-700 rounded-xl px-4 py-3 text-sm focus:border-brand focus:outline-none transition-colors placeholder:text-gray-600" />
           </div>
           {error && <p className="text-red-400 text-xs">{error}</p>}
           <button onClick={handleSubmit} disabled={loading}

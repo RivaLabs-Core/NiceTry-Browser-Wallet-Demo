@@ -34,7 +34,7 @@ export default function WalletHero({ smartAddr, onSend, onReceive }) {
   const ethDisplay = ethBal ? parseFloat(ethBal.balance).toFixed(6) : '0.000000'
 
   return (
-    <div className="p-5 bg-gray-900 border border-gray-800 rounded-2xl">
+    <div className="p-5 bg-[#26272A] border border-gray-800 rounded-2xl">
 
       {/* ETH balance hero */}
       <div className="mb-5 text-center">
@@ -54,17 +54,13 @@ export default function WalletHero({ smartAddr, onSend, onReceive }) {
       {/* Send / Receive */}
       <div className="flex gap-3">
         <button onClick={onSend}
-          className="flex items-center justify-center flex-1 gap-2 py-3 text-sm font-semibold transition-colors rounded-xl bg-brand hover:bg-emerald-400 text-gray-950">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>
-          </svg>
+          className="flex items-center justify-center flex-1 gap-2 py-3 text-sm font-semibold transition-colors rounded-xl bg-[#3F56E3] hover:bg-[#5D73FF] text-white">
+          
           Send
         </button>
         <button onClick={onReceive}
-          className="flex items-center justify-center flex-1 gap-2 py-3 text-sm font-semibold text-gray-200 transition-colors bg-gray-800 border border-gray-700 rounded-xl hover:bg-gray-700">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/>
-          </svg>
+          className="flex items-center justify-center flex-1 gap-2 py-3 text-sm font-semibold text-gray-200 transition-colors bg-gray-800 border border-gray-700 rounded-xl hover:bg-[#5D73FF] hover:text-black">
+         
           Receive
         </button>
       </div>

@@ -18,7 +18,7 @@ export default function RecoverScanning({ steps, result, onContinue, onRetry }) 
           {result ? shortAddr(result.smartAddress) : 'Scanning HD tree against on-chain owner…'}
         </p>
 
-        <div className="bg-gray-900 border border-gray-800 rounded-xl p-4 mb-6">
+        <div className="bg-[#26272A] border border-gray-800 rounded-xl p-4 mb-6">
           <div className="space-y-2">
             {steps.map((step, i) => (
               <div key={i} className="flex items-start gap-2.5 text-[12px]">

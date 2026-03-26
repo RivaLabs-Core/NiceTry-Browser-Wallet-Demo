@@ -1,13 +1,13 @@
 const styles = {
   active: 'bg-blue-500/10 border-blue-500/40 text-blue-400',
-  next:   'bg-purple-500/10 border-purple-500/25 text-purple-400',
+  next:   'bg-[#134134] border-[#00D1A0] text-[#00D1A0]',
   burned: 'border-transparent opacity-30 line-through text-gray-500',
   future: 'border-transparent text-gray-500 opacity-40',
 }
 
 const tags = {
   active: <span className="text-[9px] font-bold bg-blue-600 text-white px-1.5 py-0.5 rounded-full">SIGNER</span>,
-  next:   <span className="text-[9px] font-bold bg-purple-500/20 text-purple-400 px-1.5 py-0.5 rounded-full">NEXT</span>,
+  next:   <span className="text-[9px] font-bold bg-purple-500/20 text-[#00D1A0] px-1.5 py-0.5 rounded-full">NEXT</span>,
   burned: <span className="text-[9px] font-bold bg-red-500/15 text-red-400/60 px-1.5 py-0.5 rounded-full">BURNED</span>,
 }
 
@@ -25,7 +25,7 @@ export default function KeyTree({ tree, currentIndex }) {
   const keysLeft = tree.length - currentIndex - 1
 
   return (
-    <div className="bg-gray-900 border border-gray-800 rounded-xl p-4">
+    <div className="bg-[#26272A] border border-gray-800 rounded-xl p-4">
       <div className="flex items-center gap-2 mb-1">
         <div className="w-2 h-2 rounded-full bg-blue-500" />
         <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Key tree</h2>
