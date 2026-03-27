@@ -252,7 +252,7 @@ export default function Dashboard({
               <h1 className="text-sm font-bold tracking-tight">Nice Try</h1>
               <span className="text-[9px] text-whitefont-semibold tracking-wider uppercase flex items-center gap-1">
                 <span className="w-1.5 h-1.5  bg-[#231DF9] animate-pulse" />
-                Base Sepolia
+                Sepolia
               </span>
             </div>
           </div>
