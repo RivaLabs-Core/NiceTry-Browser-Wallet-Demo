@@ -209,6 +209,24 @@ export default function WalletApp() {
 
     log(`═══ SEND + ROTATE ═══`, 'step')
 
+    // Validate inputs
+    if (!smartAddr) {
+      log('No smart account address found', 'err')
+      setBusy(false)
+      return
+    }
+    if (!recipient || !/^0x[0-9a-fA-F]{40}$/.test(recipient)) {
+      log('Invalid recipient address', 'err')
+      setBusy(false)
+      return
+    }
+    const parsedAmount = parseFloat(amount)
+    if (amount === '' || isNaN(parsedAmount) || parsedAmount < 0) {
+      log('Invalid amount', 'err')
+      setBusy(false)
+      return
+    }
+
     // Check balance before sending
     try {
       const { parseEther, formatEther } = await import('viem')
@@ -270,7 +288,7 @@ export default function WalletApp() {
     }])
 
     setBusy(false)
-  }, [busy, currentIndex, tree, recipient, amount, log, sessionPw])
+  }, [busy, currentIndex, tree, recipient, amount, log, sessionPw, smartAddr])
 
   // ── Lock / Delete ──────────────────────────────────────────────────────
 
