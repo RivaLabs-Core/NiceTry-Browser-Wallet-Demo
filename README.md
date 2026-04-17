@@ -3,7 +3,9 @@
 > [!TIP]
 > This repo covers a single demo. For the full NiceTry project see the [main repo](https://github.com/RivaLabs-Core/NiceTry) or the [docs](https://docs.nicetry.xyz/).
 
-A browser-based demo wallet that implements NiceTry's ECDSA rotation flow natively, with browser-based key management. Live demo: [demowallet.nicetry.xyz](https://demowallet.nicetry.xyz/)
+A browser-based demo wallet that implements NiceTry's ECDSA rotation flow natively, with browser-based key management. 
+
+Live demo: [demowallet.nicetry.xyz](https://demowallet.nicetry.xyz/)
 
 ## What this is
 
